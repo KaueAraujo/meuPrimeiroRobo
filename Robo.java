@@ -45,7 +45,6 @@ public class Robo {
         System.out.println("Posição do robo: ("+coordX+","+coordY+").");
     }
 
-    }
     int setRoboNS(int y){
         if(y>7 || y<-7){
             return coordY=0;
