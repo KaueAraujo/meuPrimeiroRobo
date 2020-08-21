@@ -3,13 +3,13 @@ public class Robo {
     private int coordX, coordY;
 
     //Construtor Robo
-    Robo(int x, int y){
+    public Robo(int x, int y){
         this.coordY=setRoboNS(y);
         this.coordX=setRoboEW(x);
     }
 
     //Método 1) Robo anda para Norte
-    void goNorth(){
+    public void goNorth(){
         if(coordY>=-6 && coordY<=6){
             coordY++;
         }
@@ -17,7 +17,7 @@ public class Robo {
     }
 
     //Método 2) Robo anda para Sul
-    void goSouth(){
+    public void goSouth(){
         if(coordY>=-6 && coordY<=6){
             coordY--;
         }
@@ -25,7 +25,7 @@ public class Robo {
     }
 
     //Método 3) Robo anda para Leste
-    void goEast(){
+    public void goEast(){
         if(coordX>=-6 && coordX<=6){
             coordX++;
         }
@@ -33,7 +33,7 @@ public class Robo {
     }
 
     //Método 4) Robo anda para Oeste
-    void goWest(){
+    public void goWest(){
         if(coordX>=-6 && coordX<=6){
             coordX--;
         }
@@ -41,11 +41,11 @@ public class Robo {
     }
 
     //Método 5) Retorna a posição atual do Robo
-    void getRobo(){
+    public void getRobo(){
         System.out.println("Posição do robo: ("+coordX+","+coordY+").");
     }
 
-    int setRoboNS(int y){
+    public int setRoboNS(int y){
         if(y>7 || y<-7){
             if(y>0){
                 return coordY=7;
@@ -56,7 +56,7 @@ public class Robo {
            return coordY=y;
         }
     }
-    int setRoboEW(int x){
+    public int setRoboEW(int x){
         if(x>7 || x<-7){
             if(x>0){
                 return coordX=7;
