@@ -9,32 +9,32 @@ public class Robo {
     }
 
     //Método 1) Robo anda para Norte
-    void goNorth(int y){
-        if(y>=-6 && y<=6){
+    void goNorth(){
+        if(coordY>=-6 && coordY<=6){
             coordY++;
         }
         System.out.println("Posição do robo: ("+coordX+","+coordY+").");
     }
 
     //Método 2) Robo anda para Sul
-    void goSouth(int y){
-        if(y>=-6 && y<=6){
+    void goSouth(){
+        if(coordY>=-6 && coordY<=6){
             coordY--;
         }
         System.out.println("Posição do robo: ("+coordX+","+coordY+").");
     }
 
     //Método 3) Robo anda para Leste
-    void goEast(int x){
-        if(x>=-6 && x<=6){
+    void goEast(){
+        if(coordX>=-6 && coordX<=6){
             coordX++;
         }
         System.out.println("Posição do robo: ("+coordX+","+coordY+").");
     }
 
     //Método 4) Robo anda para Oeste
-    void goWest(int x){
-        if(x>=-6 && x<=6){
+    void goWest(){
+        if(coordX>=-6 && coordX<=6){
             coordX--;
         }
         System.out.println("Posição do robo: ("+coordX+","+coordY+").");
