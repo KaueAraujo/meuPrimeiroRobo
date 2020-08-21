@@ -4,8 +4,8 @@ public class Robo {
 
     //Construtor Robo
     Robo(int x, int y){
-        this.coordX=setRoboNS(x);
-        this.coordY=setRoboEW(y);
+        this.coordY=setRoboNS(y);
+        this.coordX=setRoboEW(x);
     }
 
     //Método 1) Robo anda para Norte
@@ -47,14 +47,22 @@ public class Robo {
 
     int setRoboNS(int y){
         if(y>7 || y<-7){
-            return coordY=0;
+            if(y>0){
+                return coordY=7;
+            }else{
+                return coordY=-7;
+            }
         }else{
            return coordY=y;
         }
     }
     int setRoboEW(int x){
         if(x>7 || x<-7){
-            return coordX=0;
+            if(x>0){
+                return coordX=7;
+            }else{
+                return coordX=-7;
+            }
         }else{
            return coordX=x;
         }
